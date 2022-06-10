@@ -437,7 +437,7 @@ def get_num_prompts_last_x_min(mins):
 
 st.sidebar.write('AIs to use')
 use_dalle = st.sidebar.checkbox('DALL·E Mega', value=True)
-use_diffusion = st.sidebar.checkbox('GLID3 XL', value=True)
+use_diffusion = st.sidebar.checkbox('GLID3 XL', value=False)
 
 st.sidebar.write('---')
 
