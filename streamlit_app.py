@@ -81,7 +81,7 @@ with col3:
         st.image(LOGO_PATH, width=200)
     st.markdown('[GitHub Repo](https://github.com/tom-doerr/dalle_flow_streamlit)')
 
-num_images = st.sidebar.slider('Number of initial images', 1, 9, 9)
+num_images = st.sidebar.slider('Number of initial images', 1, 9, 6)
 skip_rate = 1 - st.sidebar.slider('Variations change amount', 0.0, 1.0, 0.5)
 
 
@@ -437,7 +437,7 @@ def get_num_prompts_last_x_min(mins):
 
 st.sidebar.write('AIs to use')
 use_dalle = st.sidebar.checkbox('DALL·E Mega', value=True)
-use_diffusion = st.sidebar.checkbox('GLID3 XL', value=False)
+use_diffusion = st.sidebar.checkbox('GLID3 XL', value=True)
 
 st.sidebar.write('---')
 
